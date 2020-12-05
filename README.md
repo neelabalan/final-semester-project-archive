@@ -89,17 +89,17 @@ The current, voltage and speed can be requested from the telegram bot using the 
 
 NodeMCU is a Wi-Fi SOC (system on a chip) based on ESP8266 -12E Wi-Fi module. It is a highly integrated chip designed to provide full internet connectivity in a small package. It can be programmed directly through USB port using various languages. The reason why we chose NodeMCU was because it was cheap and was easy to develop in VSCode using [PlatformIO](https://platformio.org/).
 
-![](/home/blue/final-semster-project-archive/assets/nodemcu.png)
+![nodemcu](https://github.com/neelabalan/final-semester-project-archive/blob/main/assets/nodemcu.png)
 
 #### Raspberry Pi Zero
 
 Raspberry pi zero wireless is a credit card sized computer that on runs on ARMV6Z (32 – bit) 1GHz processor. The SoC has an inbuilt 802.11b/g/n single band 2.4 GHz wireless, Bluetooth 4.1 BLE (Bluetooth Low Energy) hardware driver module. We hosted the telegram bot and the MQTT broker locally in the RaspberryPi. The RaspberryPi here can be entirely replaced with AWS or Heroku or similar cloud platform.
 
-![raspberrypizero-image](/home/blue/final-semster-project-archive/assets/raspberrypizero.png)
+![raspberrypizero-image](https://github.com/neelabalan/final-semester-project-archive/blob/main/assets/raspberrypizero.png)
 
 ### Block diagram of the overall flow
 
-![](/home/blue/final-semster-project-archive/assets/flow-diag.png)
+![flow-diag](https://github.com/neelabalan/final-semester-project-archive/blob/main/assets/flow-diag.png)
 
 
 
@@ -107,7 +107,7 @@ Raspberry pi zero wireless is a credit card sized computer that on runs on ARMV6
 
 #### Circuit Block diagram
 
-![circuit-block-diagram](/home/blue/final-semster-project-archive/assets/circuit-block-diagram.png)
+![circuit-block-diagram](https://github.com/neelabalan/final-semester-project-archive/blob/main/assets/circuit-block-diagram.png)
 
 #### Power Supply
 
@@ -117,7 +117,7 @@ There are three power supply connections involved in this project. One is for th
 
 ##### Power supply for the signal conditioning circuit and multiplexer circuit
 
-![](/home/blue/final-semster-project-archive/assets/ps1.png)
+![ps1](https://github.com/neelabalan/final-semester-project-archive/blob/main/assets/ps1.png)
 
 The power transformer of rating **415 V/15 V** with center tap gets a supply voltage of **230 V** and this supply can be drawn from the mains. The transformer steps down the voltage down to **+9** and **–9 V**. The **+9 V** and **–9 V** AC supply from the transformer secondary is provided to bridge rectifier **IC DB104**. The output of **DB104** is a DC voltage of **+ 5.34 V** and **– 5.34 V** considering the potential drop across the 4 diodes. The positive and negative output of the bridge rectifier IC is fed as input to the voltage regulator **ICs LM7805** (positive supply) and **LM7905** (negative supply). A rectifier output voltage of **+5 V** and **-5 V** are obtained at the output of **LM7805 IC** and **LM7905 IC** respectively.
 
@@ -157,19 +157,19 @@ The ADC count in the above equation (2) refers to the digital value received for
 
 ##### Position of CT and PT
 
-![ct-pt](/home/blue/final-semster-project-archive/assets/position_ct_pt.png)
+![ct-pt](https://github.com/neelabalan/final-semester-project-archive/blob/main/assets/position_ct_pt.png)
 
 
 
 #### Position of Hall effect sensor for speed measurement
 
-![](/home/blue/final-semster-project-archive/assets/hallsensor.png)
+![hallsensor](https://github.com/neelabalan/final-semester-project-archive/blob/main/assets/hallsensor.png)
 
 
 
 #### Signal Conditioning Unit
 
-![signal-conditioning-unit](/home/blue/final-semster-project-archive/assets/signal-conditioning-unit.png)
+![signal-conditioning-unit](https://github.com/neelabalan/final-semester-project-archive/blob/main/assets/signal-conditioning-unit.png)
 
 Among many methods that are being used to monitor the current and voltage of a device, using a current and potential transformer is preferable because it is an easy and cost effective method. The current transformer is easy to install and susceptible to very less mechanical stress compared to Hall effect current sensor. The potential transformer is a better method to measure AC voltage compared to using potential divider and then using a precision rectifier to measure the voltage.
 
@@ -196,7 +196,7 @@ The **CD4051** is a CMOS single 8-channel analog   multiplexer/demultiplexer wit
 
 The input is AC and is unfiltered. The input to three channel selects namely A, B and C are provided from the NodeMCU GPIOs through the level shifter. Upon setting high and low levels in GPIOs the channels are selected in the multiplexer accordingly. The GPIOs D6, D7 and D8 are configured in the output mode and are toggled in accordance with the table to select a channel to which the sensors are connected.
 
-![multiplexer](/home/blue/final-semster-project-archive/assets/multiplexer.png)
+![multiplexer](https://github.com/neelabalan/final-semester-project-archive/blob/main/assets/multiplexer.png)
 
 The suitable current or voltage sensor’s input to the ADC can be selected from the MCU. The level shifter senses the input from the GPIO of NodeMCU and then outputs 5 V at the multiplexer channel select pins The **3.3 V to 5 V** level shifter is used to select the channels in the multiplexer. The output of the multiplexer is connected the **ADS1115 (ADC)** and the digital values is being read by the MCU using I2C from the defined address in the EEPROM.
 
@@ -377,13 +377,13 @@ The program to find the duration of operation of the motor is included in the py
 
 * Viewing the three phase current and voltage from ESP8266 using PlatformIO device monitor commands, Pretty useful :smile:
 
-![](/home/blue/final-semster-project-archive/assets/cli-snapshot2.png)
+![cli-snapshot](https://github.com/neelabalan/final-semester-project-archive/blob/main/assets/cli-snapshot2.png)
 
 
 
 * Screenshot of MQTT connection getting established
 
-![mqtt-cli-snapshot](/home/blue/final-semster-project-archive/assets/mqtt-cli-snapshot.png)
+![mqtt-cli-snapshot](https://github.com/neelabalan/final-semester-project-archive/blob/main/assets/mqtt-cli-snapshot.png)
 
 
 
@@ -393,17 +393,17 @@ The program to find the duration of operation of the motor is included in the py
 
 
 
-![cli-snapshot3](/home/blue/final-semster-project-archive/assets/cli-snapshot3.png)
+![cli-snapshot3](https://github.com/neelabalan/final-semester-project-archive/blob/main/assets/cli-snapshot3.png)
 
 
 
-![telegram-bot-snapshot](/home/blue/final-semster-project-archive/assets/telegram-bot-snapshot.png)
+![telegram-bot-snapshot](https://github.com/neelabalan/final-semester-project-archive/blob/main/assets/telegram-bot-snapshot.png)
 
-![telegram-bot-snapshot2](/home/blue/final-semster-project-archive/assets/telegram-bot-snapshot2.png)
+![telegram-bot-snapshot2](https://github.com/neelabalan/final-semester-project-archive/blob/main/assets/telegram-bot-snapshot2.png)
 
-![telegram-bot-snapshot3](/home/blue/final-semster-project-archive/assets/telegram-bot-snapshot3.png)
+![telegram-bot-snapshot3](https://github.com/neelabalan/final-semester-project-archive/blob/main/assets/telegram-bot-snapshot3.png)
 
-![excel-screenshot](/home/blue/final-semster-project-archive/assets/excel-snapshot.png)
+![excel-screenshot](https://github.com/neelabalan/final-semester-project-archive/blob/main/assets/excel-snapshot.png)
 
 
 
@@ -415,7 +415,7 @@ The Chat Bot logs the 3 phase current and voltage of the motor at the moment alo
 
 Below image shows the captured output voltage of the 3 potential transformer used to measure the 3 phase voltage of the motor. From the oscilloscope graph, It can be clearly seen that the voltage are displaced **120 degrees** apart with almost the same magnitude
 
-![waveform-voltage](/home/blue/final-semster-project-archive/assets/waveform-voltage.png)
+![waveform-voltage](https://github.com/neelabalan/final-semester-project-archive/blob/main/assets/waveform-voltage.png)
 
 
 
@@ -423,19 +423,19 @@ Below image shows the captured output voltage of the 3 potential transformer use
 
 The output of the three current transformer used to measure the 3 phase current output of the motor is a voltage. This voltage is measured across the burden resistor of **100 Ohms**. The waveform output of the current transformers are displaced 120 degrees from each. The output voltage from both the current transformer and the voltage transformer are set to 200 mV when peak values of measurements are reached
 
-![](/home/blue/final-semster-project-archive/assets/waveform-current.png)
+![waveform-current](https://github.com/neelabalan/final-semester-project-archive/blob/main/assets/waveform-current.png)
 
 
 
 The multiplexer switching is done with two second delay and that is observed in the switching input received from the microcontroller in the below image
 
-![waveform-mux](/home/blue/final-semster-project-archive/assets/waveform-mux.png)
+![waveform-mux](https://github.com/neelabalan/final-semester-project-archive/blob/main/assets/waveform-mux.png)
 
 
 
 The output of the precision rectification circuit is DC waveform. Fig. 5.10 shows the comparison of the input AC signal and the output of the rectifier. The magnitude of AC signal (peak-peak) and DC is same here and can be observed in the waveform
 
-![waveform-rec](/home/blue/final-semster-project-archive/assets/waveform-rec.png)
+![waveform-rec](https://github.com/neelabalan/final-semester-project-archive/blob/main/assets/waveform-rec.png)
 
 
 
@@ -443,7 +443,7 @@ The output of the precision rectification circuit is DC waveform. Fig. 5.10 show
 
 > The speed sensor is removed from the below diagram. We faced some issue at last in sensing the speed. What we did here is not the standard way of measuring the speed of a motor. Our workaround wasn't effective :pensive:
 
-![assembly](/home/blue/final-semster-project-archive/assets/photo-assembly.jpg)
+![assembly](https://github.com/neelabalan/final-semester-project-archive/blob/main/assets/photo-assembly.jpg)
 
 
 
