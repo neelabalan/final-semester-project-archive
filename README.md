@@ -6,45 +6,45 @@ This is a proof of concept for using the MQTT protocol for data acquisition in i
 
 # Table of Contents
 
-* [Abstract](#Abstract)
+* [Abstract](https://github.com/neelabalan/final-semester-project-archive#abstract)
 
-* [Introduction](#Introduction)
+* [Introduction](https://github.com/neelabalan/final-semester-project-archive#introduction)
 
-    * [MQTT protocol](##MQTT protocol)
-        * [Why MQTT? Why not HTTPS?](###Why MQTT? Why not HTTPS?)
-    * [Using Telegram Chat Bot](##Using Telegram Chat Bot)
-    * [NodeMCU](##NodeMCU)
-    * [Raspberry Pi Zero](##Raspberry Pi Zero)
+    * [MQTT protocol](https://github.com/neelabalan/final-semester-project-archive#mqtt-protocol)
+        * [Why MQTT? Why not HTTPS?](https://github.com/neelabalan/final-semester-project-archive#why-mqtt-why-not-https)
+    * [Using Telegram Chat Bot](https://github.com/neelabalan/final-semester-project-archive#using-telegram-chat-bot)
+    * [NodeMCU](https://github.com/neelabalan/final-semester-project-archive#nodemcu)
+    * [Raspberry Pi Zero](https://github.com/neelabalan/final-semester-project-archive#raspberry-pi-zero)
 
-    * [Block diagram of the overall flow](##Block diagram of the overall flow)
+    * [Block diagram of the overall flow](https://github.com/neelabalan/final-semester-project-archive#block-diagram-of-the-overall-flow)
 
-* [Hardware Development](#Hardware Development)
+* [Hardware Development](https://github.com/neelabalan/final-semester-project-archive#hardware-development)
 
-    * [Circuit Block diagram](##Circuit Block diagram)
-    * [Power Supply](##Power Supply)
-        * [Power supply for the signal conditioning circuit and multiplexer circuit](###Power supply for the signal conditioning circuit and multiplexer circuit)
-        * [Power supply for MCU](###Power supply for MCU)
-    * [Using CT and PT](##Using CT and PT)
-        * [Position of CT and PT](###Position of CT and PT)
-    * [Position of Hall effect sensor for speed measurement](##Position of Hall effect sensor for speed measurement)
-    * [Signal Conditioning Unit](##Signal Conditioning Unit)
-    * [Multiplexer](##Multiplexer)
+    * [Circuit Block diagram](https://github.com/neelabalan/final-semester-project-archive#circuit-block-diagram)
+    * [Power Supply](https://github.com/neelabalan/final-semester-project-archive#power-supply)
+        * [Power supply for the signal conditioning circuit and multiplexer circuit](https://github.com/neelabalan/final-semester-project-archive#power-supply-for-the-signal-conditioning-circuit-and-multiplexer-circuit)
+        * [Power supply for MCU](https://github.com/neelabalan/final-semester-project-archive#power-supply-for-mcu)
+    * [Using CT and PT](https://github.com/neelabalan/final-semester-project-archive#using-ct-and-pt)
+        * [Position of CT and PT](https://github.com/neelabalan/final-semester-project-archive#position-of-ct-and-pt)
+    * [Position of Hall effect sensor for speed measurement](https://github.com/neelabalan/final-semester-project-archive#position-of-hall-effect-sensor-for-speed-measurement)
+    * [Signal Conditioning Unit](https://github.com/neelabalan/final-semester-project-archive#signal-conditioning-unit)
+    * [Multiplexer](https://github.com/neelabalan/final-semester-project-archive#multiplexer)
 
-* [Software development](#Software development)
+* [Software development](https://github.com/neelabalan/final-semester-project-archive#software-development)
 
-    * [ESP8266](##ESP8266)
-    * [RaspberryPi](##RaspberryPi)
-    * [Telegram bot commands and responses](##Telegram bot commands and responses)
+    * [ESP8266](https://github.com/neelabalan/final-semester-project-archive#esp8266)
+    * [RaspberryPi](https://github.com/neelabalan/final-semester-project-archive#raspberrpipi)
+    * [Telegram bot commands and responses](https://github.com/neelabalan/final-semester-project-archive#telegram-bot-commands-and-responses)
 
-* [Final outcome](#Final outcome)
+* [Final outcome](https://github.com/neelabalan/final-semester-project-archive#final-outcome)
 
-    * [Screenshots of terminal](##Screenshots of terminal)
-    * [Telegram Chat Bot screenshots](##Telegram Chat Bot screenshots)
-    * [Waveform screenshot](##Waveform screenshot)
+    * [Screenshots of terminal](https://github.com/neelabalan/final-semester-project-archive#screenshots-of-terminal)
+    * [Telegram Chat Bot screenshots](https://github.com/neelabalan/final-semester-project-archive#telegram-chat-bot-screenshots)
+    * [Waveform screenshot](https://github.com/neelabalan/final-semester-project-archive#waveform-screenshot)
 
-* [Assembled Ciruit in General Purpose Board](#Assembled Ciruit in General Purpose Board)
+* [Assembled Ciruit in General Purpose Board](https://github.com/neelabalan/final-semester-project-archive#assembled-ciruit-in-general-purpose-board)
 
-* [References](#References)
+* [References](https://github.com/neelabalan/final-semester-project-archive#references)
 
 
 
