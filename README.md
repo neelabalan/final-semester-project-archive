@@ -183,7 +183,7 @@ The precision rectifier circuit uses the Op-Amp **IC LM324**. The **LM324 IC** h
 
 The **CD4051** is a CMOS single 8-channel analog   multiplexer/demultiplexer with logic level conversion. Analog input of **20V peak-peak** and can supplied. The multiplexer is used here to avoid building six separate precision rectification and amplifier circuit for 3 current transformer input and 3 potential transformer input. The single circuit can be used for conditioning the AC signal by switching the channels. The secondary of the three potential transformer and the secondary of the three current transformers are connected to the Multiplexer input. 
 
-![multiplexer-circuit](/home/blue/final-semster-project-archive/assets/multiplexer-cicuit.png)
+![multiplexer-circuit](https://github.com/neelabalan/final-semester-project-archive/blob/main/assets/multiplexer-cicuit.png)
 
 | **Phase voltage and current** | **Channel selection** |
 | ----------------------------- | --------------------- |
