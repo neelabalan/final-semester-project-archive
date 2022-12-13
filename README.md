@@ -142,13 +142,12 @@ The potentiometer connected in series with the CT is adjusted such that for a cu
 With a time delay of 2 seconds between sampling of two different sensor's analog outputs. So a total of 12 seconds is required to convert the analog signal of all the sensors to digital and display that data in telegram. The multiplexer channel selects are switched in that fashion with inherent delay in the program.
 
 The analog data from the sensors need to be converted to a digital form for the microcontroller to read it. An analog to digital conversion **IC ADS-1115** of **16-bit** resolution is being used here. This IC has high precision measurement and has a 860 samples/second speed at maximum. Of the four single ended input channels namely A0, A1, A2 and A3. Channel A1 is used in the continuous conversion mode. The inherent programmable gain amplifier is set at 2 times gain. The 2X gain corresponds to **+/- 2.048 V** measurement at A1 channel of the ADC. With this gain of two, a voltage resolution of **1 mV** for 1 bit is obtained.
-$$
-Motor Voltage = { 450 * ADCcount  \over ADCupcount }\ (1)  \ where \ ADCupcount=32768\ for\ 16bit\ ADC
-$$
+
+$$Motor Voltage = { 450 * ADCcount  \over ADCupcount }\ (1)  \ where \ ADCupcount=32768\ for\ 16bit\ ADC$$
+
 The ADC count in the above equation (1) refers to the digital value received for the corresponding analog value of the measured voltage.
-$$
-Motor Current = {1.5* ADC Count \over ADCupcount}\ (2)\ where \ ADCupcount=32768\ for\ 16bit\ ADC
-$$
+
+$$Motor Current = {1.5* ADC Count \over ADCupcount}\ (2)\ where \ ADCupcount=32768\ for\ 16bit\ ADC$$
 
 
 The ADC count in the above equation (2) refers to the digital value received for the corresponding analog value of the measured current
